@@ -37,7 +37,6 @@ EXAMPLES = '''
 '''
  
 #---- Logic Start ------------------------------------------------------------#
- 
 def main():
     # Note: 'AnsibleModule' is an Ansible utility imported below
     module = AnsibleModule(
@@ -51,11 +50,10 @@ def main():
     text = module.params['name']
     if success:
       module.exit_json(text=text)
-      
     else:
-      #module.fail_json(msg=text)
-      module.exit_json(text=text)
- 
+      module.fail_json(msg=text)
+    
+    #module.exit_json("dk")
 #---- Import Ansible Utilities (Ansible Framework) ---------------------------#
 from ansible.module_utils.basic import *
 main()
