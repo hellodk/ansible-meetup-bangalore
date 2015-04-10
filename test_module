@@ -52,7 +52,8 @@ def main():
     if success:
       module.exit_json(text=text)
     else:
-      module.fail_json(msg=text)
+      #module.fail_json(msg=text)
+      module.exit_json(text=text)
  
 #---- Import Ansible Utilities (Ansible Framework) ---------------------------#
 from ansible.module_utils.basic import *
