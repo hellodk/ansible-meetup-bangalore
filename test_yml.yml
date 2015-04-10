@@ -9,4 +9,7 @@
       test_module: name="Hello World!"
 
     - name: 'Calling success via test_module'
-      test_module: name="success"
+      test_module: name="success is" success=yes
+
+    - name: 'Calling fail via test_module'
+      test_module: name="success is" success=no
