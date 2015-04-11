@@ -10,8 +10,8 @@
 DOCUMENTATION = '''
 ---
 version_added: "1.7"
-module: echo
-short_description: echo
+module: test_module
+short_description: test_module
 description:
   - This module returns/displays a configured string
 options:
@@ -32,8 +32,8 @@ author: Deepak Gupta - @hellodk
 '''
  
 EXAMPLES = '''
-- name: "echo"
-  echo: name="I executed successfully" success=yes
+- name: "testing module"
+  test_module: name="I executed successfully" success=yes
 '''
  
 #---- Logic Start ------------------------------------------------------------#

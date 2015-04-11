@@ -2,7 +2,7 @@
   user: dk
   gather_facts: no
   connection: local
-   
+
   tasks:
     #Call ansible module "userinfo" with parameter "username=testuser"
     - name: 'Calling test_module'
